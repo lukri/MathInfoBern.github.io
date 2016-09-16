@@ -2,19 +2,122 @@
 layout: default
 ---
 
-<div class="home">
+<div class="page">
 
-  <h1 class="page-heading">Posts</h1>
+  <head>
+    <title>MathInfoBern</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="Icon%0D" type="image/x-icon">
+    <link rel="stylesheet"type="text/css" href="/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  </head>
+
+  <!-- Header -->
+  <header style="position:fixed;top:0px">
+
+    <div id="stuck_container" class="stuck_container">
+      <div class="container">
+	<img src="images/banner_2.png">
+	<nav class="nav">
+	  <ul class="sf-menu">
+	    <li class="active">
+	      <a href="#about">About</a>
+	    </li>
+	    <li>
+	      <a href="#resources">Resources</a>
+	    </li>
+	    <li>
+	      <a href="#sponsoring">Sponsoring</a>
+	    </li>
+	    <li>
+	      <a href="#contact">Contact</a>
+	    </li>
+	  </ul>
+	</nav>
+      </div>
+    </div>
+
+  </header>
+
+
+  <!--========================================================
+      CONTENT
+      =========================================================-->
+  <main>
+
+    <!--About -->
+    <section id="about" class="scrollto well well__offset-3">
+      <div class="container">
+	<h2><em>Who</em>We Are</h2>
+	<div class="row box-1">
+	  <div class="grid_6">
+	    <div class="img">
+	      <div>
+		<img src="/images/euclid.jpg" alt="">
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="grid_6">
+	    <h3 class="indents-3">We are the student association of all Mathematics and
+	      Computer Science students at the University of Bern.
+	      Our foundation is independent from university and entirely based on
+	      voluntary work by students with the primary focus on promoting an active
+	      exchange between students to ease their studies. If you too study one of
+	      these disciplines we warmly welcome you to be part of our meetings and
+	      events and make use of our extensive repository of resources such as
+	      exams or summaries!</h3>
+	    <p class="indents-3">On a regular base we organize casual events such
+	      as movienights, table football tournaments culminating in our big
+	      semester-end-party - the ideal event to make new connections within ExWi.
+	      Our events with our sponsors enable you to get a glimpse of the business
+	      world through engaging discussions with insiders and interesting presentations.</p>
+	  </div>
+	</div>
+      </div>
+    </section>
+
+    <!--Resources -->
+    <section id="resources" class="scrollto parallax parallax4" data-parallax-speed="-0.4">
+      <div class="container">
+	<h2><em>Resources</em></h2>
+	<p class="indents-3 center">We are currently in the process of setting up our
+	  archive consisting of a wide range of old exams and other helpful material
+	  for your study. While we are not able to cover every course, we continuously
+	  extend our collection to keep it as current and comprehensive as possible.<br/><br/>
+	  <a style="font-size: 18px; text-decoration: underline; background-color: black;
+		    color: white; display: inline-block; padding: 2px; font-weight:600;"
+	     href="http://mib.unibe.ch/exams">EXAM COLLECTION</a>
+	</p>
+      </div>
+    </section>
+
+
+    <section id="contact" class="scrollto well well__offset-4">
+      <div class="container">
+	<h2>Contact</h2>
+	<address class="address-2">
+	  <div class="address_container">
+	    <h3>Fachschaft Mathematik und Informatik Bern (MIB)<br/>Exakte Wissenschaften<br/>Sidlerstrasse 5<br/>3012 CH-Bern<br/><a href="mailto:info@mib.unibe.ch">info@mib.unibe.ch</a></h3></div>
+	</address>
+      </div>
+    </section>
+  </main>
+
+
+  <h1 class="page-heading">News</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+      <h2>
+	<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+      </h2>
+    </li>
     {% endfor %}
   </ul>
 
