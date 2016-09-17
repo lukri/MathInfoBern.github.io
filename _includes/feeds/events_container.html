@@ -1,0 +1,38 @@
+<!-- Highlights -->
+<div class="wrapper style3">
+  <div class="title">Events</div>
+  <div id="highlights" class="container">
+    <div class="row 150%">
+
+      {% assign events = site.events | sort: 'date' | reverse %}
+      {% for event in events %}
+
+      <div class="4u 12u(mobile)">
+
+	<section class="highlight">
+	  {% if event.link %}
+	  <a href="{{event.link}}">
+	    {% endif %}
+	    <img src="{{base}}/images/events/{{event.image}}" alt="" />
+	    {% if event.link %}</a>{% endif %}
+
+	  <h3>{{event.title}}</h3>
+	  <p>
+	    {% include functions/german-date.html date=event.date %}</p>
+	  <p>{{event.text}}</p>
+	  <ul class="actions">
+	    {% if event.link %}
+	    <li><a href="{{event.link}}" class="button style1">Learn More</a></li>
+
+	    {% endif %}
+
+	  </ul>
+	</section>
+      </div>
+
+      {% endfor %}
+
+
+    </div>
+  </div>
+</div>
