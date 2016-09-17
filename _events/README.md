@@ -1,13 +1,13 @@
 # Events
-Jekyll lookup directory for Events
+Jekyll lookup directory for Events.
 
-all listed fields are required
-the date must be in iso format (YYYY-MM-DD)
----
-title: Erstsemestrigen Apero
-text: Im 3.OG auf der Terasse
-text-en: 3.OG
-link: https://mathinfobern.github.io/
-image: example.jpg
-date: 2016-9-30
----
+To add an event, create here a new file eventname.yml of the following form. 
+All fields are required.
+
+    ---
+    title: some title
+    text: some text
+    link: link to facebook event
+    image: flyer or other image
+    date: YYYY-MM-DD
+    ---
