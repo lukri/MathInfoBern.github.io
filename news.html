@@ -1,10 +1,8 @@
 ---
 layout: startpage
-title: MIB-Exams
+title: News
 ---
 <div id="page-wrapper">
-
-
 
   <!-- Main -->
   <div class="wrapper style2">
@@ -17,26 +15,8 @@ title: MIB-Exams
 	  <div id="sidebar">
 
 	    {% include feeds/events_sidebar_box.html %}
-
-	    <!--Exams -->
-	    <section class="box">
-	      <header>
-		<h2>Exams</h2>
-	      </header>
-	      <ul class="style3">
-		<ul>
-		  <li>
-		    {% for exam in site.data.exams %}
-		    <a href="/resources/exams/{{exam.name}}.pdf">{{exam.name}}
-		    </a>
-		    {% endfor%}
-		  </li>
-		</ul>
-	      </ul>
-	    </section>
 	  </div>
 	</div>
-
 	<div class="8u 12u(mobile) important(mobile)">
 
 	  <!-- Content -->
@@ -46,26 +26,22 @@ title: MIB-Exams
 	    {% for post in site.posts %}
 
 	    <article class="box post">
-	      <header class="style1">
-		<h2>{{ post.title }}</h2>
-		<p>{{ post.subtitle }}</p>
-	      </header>
-	      <img style="max-width:600px"
-		   src="{{base}}/images/post/{{post.image}}" alt="" />
-	      {{post.content}}
-	    </article>
+		<header class="style1">
+		  <h2>{{ post.title }}</h2>
+		  <p>{{ post.subtitle }}</p>
+		</header>
 
-	    {% endfor %}
+		<img style="max-width:300px"
+		     src="{{base}}/images/post/{{post.image}}" alt="" />
+		{{post.content}}
+	      </article>
 
+	      {% endfor %}
 
-
-
-
-
+	    </div>
 	  </div>
-	</div>
 
+	</div>
       </div>
     </div>
   </div>
-</div>

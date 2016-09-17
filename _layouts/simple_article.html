@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html>
+  {% include head.html %}
+  <body class="no-sidebar">
+    {% include header.html %}
+
+    <div id="page-wrapper">
+
+      <!-- Main -->
+      <div class="wrapper style2">
+	<div class="title">{{page.title}}</div>
+	<div id="main" class="container">
+
+	  <!-- Content -->
+	  <div id="content">
+
+	    <article class="box post">
+
+	      <header class="style1">
+		<h2>{{page.title}}</h2>
+		{% if page.subtitle %}
+		<p>{{page.subtitle}}</p>
+		{% endif %}
+	      </header>
+
+	      {% if page.image %}
+	      <img style="max-width:300px;"
+		   src="{{site.url}}/images/article/{{page.image}}"
+		   alt="" />
+	      {% endif %}
+
+	      {{content}}
+
+	    </article>
+	  </div>
+	</div>
+      </div>
+
+      {% include scripts.html %}
+      {% include footer.html %}
+  </body>
+</html>
