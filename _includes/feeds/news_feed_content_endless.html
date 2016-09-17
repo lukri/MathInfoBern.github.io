@@ -1,0 +1,20 @@
+<!-- Content -->
+<div id="content">
+
+
+  {% for post in site.posts %}
+
+  <article class="box post">
+    <header class="style1">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.subtitle }}</p>
+    </header>
+
+    <img style="max-width:300px"
+	 src="{{base}}/images/post/{{post.image}}" alt="" />
+    {{post.content}}
+  </article>
+
+  {% endfor %}
+
+</div>

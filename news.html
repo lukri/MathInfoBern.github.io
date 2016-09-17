@@ -19,26 +19,7 @@ title: News
 	</div>
 	<div class="8u 12u(mobile) important(mobile)">
 
-	  <!-- Content -->
-	  <div id="content">
-
-
-	    {% for post in site.posts %}
-
-	    <article class="box post">
-		<header class="style1">
-		  <h2>{{ post.title }}</h2>
-		  <p>{{ post.subtitle }}</p>
-		</header>
-
-		<img style="max-width:300px"
-		     src="{{base}}/images/post/{{post.image}}" alt="" />
-		{{post.content}}
-	      </article>
-
-	      {% endfor %}
-
-	    </div>
+	  {% include feeds/news_feed_content_endless.html %}
 	  </div>
 
 	</div>

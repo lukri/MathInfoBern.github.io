@@ -1,0 +1,18 @@
+<!--Exams -->
+<section class="box">
+  <header>
+    <h2>Exams</h2>
+  </header>
+  <ul class="style3">
+    <ul>
+      <li>
+	{% for exam in site.data.exams %}
+	<a href="/resources/exams/{{exam.name}}.pdf">{{exam.name}}
+	</a>
+	{% endfor%}
+      </li>
+    </ul>
+  </ul>
+</section>
+</div>
+</div>
