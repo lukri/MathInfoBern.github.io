@@ -1,0 +1,27 @@
+<section id ="events" class="box">
+  <header>
+    <h2>Events</h2>
+  </header>
+  <ul class="style2">
+    {% assign events = site.events | sort: 'date' | reverse %}
+    {% for event in events %}
+    <li>
+      <article class="box post-excerpt">
+	{% if event.link %}
+	<a href="{{event.link}}">
+	  {% endif %}
+	  <img class="image left"
+	       src="{{base}}/images/events/{{event.image}}"
+	       alt="{{event.title}}"/>
+	  {% if event.link %}</a>{% endif %}
+	<h3>{{event.title}}</h3>
+	<p>
+	  {% include functions/german-date.html date=event.date %}</p>
+	<p>{{event.text}}</p>
+      </article>
+    </li>
+    {% endfor %}
+
+  </ul>
+  <a href="#" class="button style1">Archives</a>
+</section>

@@ -1,0 +1,73 @@
+---
+layout: startpage
+title: MIB-Exams
+---
+<div id="page-wrapper">
+
+  {% include header.html%}
+
+  <!-- Main -->
+  <div class="wrapper style2">
+    <div class="title">Resources</div>
+    <div id="main" class="container">
+      <div class="row 150%">
+	<div class="4u 12u(mobile)">
+
+	  <!-- Sidebar -->
+	  <div id="sidebar">
+
+	    {% include feeds/events_sidebar_box.html %}
+
+	    <!--Exams -->
+	    <section class="box">
+	      <header>
+		<h2>Exams</h2>
+	      </header>
+	      <ul class="style3">
+		<ul>
+		  <li>
+		    {% for exam in site.data.exams %}
+		    <a href="/resources/exams/{{exam.name}}.pdf">{{exam.name}}
+		    </a>
+		    {% endfor%}
+		  </li>
+		</ul>
+	      </ul>
+	    </section>
+	  </div>
+	</div>
+
+	<div class="8u 12u(mobile) important(mobile)">
+
+	  <!-- Content -->
+	  <div id="content">
+
+
+	    {% for post in site.posts %}
+
+	    <article class="box post">
+	      <header class="style1">
+		<h2>{{ post.title }}</h2>
+		<p>{{ post.subtitle }}</p>
+	      </header>
+	      <img style="max-width:600px"
+		   src="{{base}}/images/post/{{post.image}}" alt="" />
+	      {{post.content}}
+	    </article>
+
+	    {% endfor %}
+
+
+
+
+
+
+	  </div>
+	</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}

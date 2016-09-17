@@ -17,9 +17,9 @@
 email: your-email@domain.com
 description: > #Mathematik Informatik Fachschaft Bern
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
+url: https://mathinfobern.github.io
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  MathInfoBern
 
 collections:
 - events

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+
+<html>
+  {% include head.html %}
+
+  <body class="homepage">
+
+    <div id="page-wrapper">
+
+      {% include header.html%}
+
+      <!-- Main -->
+      <div class="wrapper style2">
+	<div class="title">News</div>
+	<div id="main" class="container">
+	  <div class="row 150%">
+	    <div class="4u 12u(mobile)">
+	      <div id="sidebar">
+		{% include /feeds/events_sidebar_box.html %}
+	      </div>
+	    </div>
+
+	    <div class="8u 12u(mobile) important(mobile)">
+
+	      <!-- Content -->
+	      <div id="content">
+		<article class="box post">
+		  <header class="style1">
+		    <h2>{{page.title}}</h2>
+		    {% if page.subtitle %}
+		    <p>{{page.subtitle}}</p>
+		    {% endif %}
+		  </header>
+		  {% if page.image %}
+		  <img style="max-width:600px;"
+		       src="{{base}}/images/post/{{page.image}}"
+		       alt="" />
+		  {% endif %}
+		  {{content}}
+		</article>
+
+
+		{% for post in site.posts %}
+
+		<div class="row 150%">
+		  <div class="6u 12u(mobile)">
+		    <section class="box">
+		      <header>
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		      </header>
+		      <a href="{{ post.url }}" class="image featured"><img src="{{base}}/images/post/{{post.image}}" alt="" /></a>
+		      {{post.excerpt}}
+		      <a href="{{ post.url }}" class="button style1">More</a>
+		    </section>
+		  </div>
+		  </div>
+
+		  {% endfor %}
+
+
+		</div>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
+      </div>
+
+      {% include footer.html %}
+
+  </body>
+
+</html>
