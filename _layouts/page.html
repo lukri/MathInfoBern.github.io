@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
 
+<!--Template to use for a markdown page. -->
 
 <html>
   {% include head.html %}
 
-  <body class="homepage">
+  <body class="no-sidebar">
 
+    {% include header.html%}
     <div id="page-wrapper">
 
-      {% include header.html%}
+
 
       <!-- Main -->
       <div class="wrapper style2">
@@ -38,9 +40,8 @@
 	  </div>
 	</div>
       </div>
-
       {% include footer.html %}
-
+      {% include scripts.html %}
   </body>
 
 </html>
