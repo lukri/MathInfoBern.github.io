@@ -1,7 +1,7 @@
 <!-- Content -->
 <div id="content">
 
-  {% for post in site.posts limit:1 %}
+  {% for post in site.posts limit:2 %}
 
   <article class="box post">
     <header class="style1">
@@ -9,9 +9,13 @@
       <p>{{ post.subtitle }}</p>
     </header>
 
+    <p>
     <img style="max-width:300px"
 	 src="{{base}}/images/post/{{post.image}}" alt="" />
+    </p>
+    <p>
     {{post.content}}
+    </p>
   </article>
 
   {% endfor %}
