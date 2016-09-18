@@ -1,18 +1,13 @@
 ---
 layout: post
 title:  "MIB back online"
-subtitle: "and wishes everyone a good start into the new semester"
-image: euclid.jpg
+subtitle: "finally"
+image: frog.jpg
 date:   2016-09-18 16:30:00 +0200
 categories: news
-
+author: Bruno
 ---
-Some words..
+The website is based on GitHub Pages, Jekyll and a responsive Template from [HTML5 UP][html5up_link]. If you are interested in the source code, checkout {% include icon-github.html username="MathInfoBern" %} / [MathInfoBern.github.io][github_link]
 
-about what is planned this year
-
-etc...
-
-We have [Facebook][facebook_link].
-
-[facebook_link]: http://facebook.com/KeAhnigWieDieIsch
+[github_link]: https://github.com/MathInfoBern/MathInfoBern.github.io
+[html5up_link]: https://html5up.net/

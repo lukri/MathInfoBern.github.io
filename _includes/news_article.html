@@ -1,0 +1,22 @@
+{% assign post = include.post %}
+<article class="box post">
+
+  <header class="style1">
+    <p style="text-align:left">
+      {% include functions/german-date.html date=post.date %},
+      {{ post.date | date: '%H:%M' }}
+    </p>
+    </br>
+      <h2>{{ post.title }}</h2>
+    <img style="max-width:300px"
+	 src="{{base}}/images/post/{{post.image}}" alt=""
+	 align="middle" />
+    <p>{{ post.subtitle }}</p>
+    </header>
+  {{ post.content }}
+  <footer>
+    <p style="text-align:right">
+      Author: <i> {{ post.author }}</i>
+    </p>
+    </footer>
+  </article>
