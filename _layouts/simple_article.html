@@ -30,11 +30,13 @@
 		   alt="" />
 	      {% endif %}
 
-	      {{content}}
 
 	    </article>
+{{content | markdownify}}
 	  </div>
+
 	</div>
+
       </div>
 
       {% include scripts.html %}

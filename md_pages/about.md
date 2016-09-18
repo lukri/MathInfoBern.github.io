@@ -5,18 +5,22 @@ subtitle: Who we are
 permalink: /about/
 ---
 
-#Vorstand
+Vorstand
+==========
 
-* Lukas Riesen 
+
+* **Lukas Riesen**
   * Präsident
-  
-* Guillame Corsini
+
+* **Guillame Corsini**
   * Vizepräsident
-  
-* Bruno Senti
- * Vertretung Haus- und Bibliothekskommission
- * Webadmin
+
+* **Bruno Senti**
+  * Vertretung Haus- und Bibliothekskommission
+  * Webadmin
 
 * to be continued ...
+
+
 You can find this page on GitHub:
 {% include icon-github.html username="MathInfoBern" %} / [MathInfoBern.github.io](https://github.com/MathInfoBern/MathInfoBern.github.io)
