@@ -12,10 +12,8 @@
 	<section class="highlight">
 	  {% if event.link and event.image %}
 	  <a href="{{event.link}}">
-	    {% endif %}
 	    <img src="{{base}}/images/events/{{event.image}}" alt="" />
-	    {% if event.link %}</a>{% endif %}
-
+	    </a>{% endif %}
 	  <h3>{{event.title}}</h3>
 	  <p>
 	    {% include functions/german-date.html date=event.date %}</p>
