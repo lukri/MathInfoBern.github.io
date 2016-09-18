@@ -10,7 +10,7 @@
       <div class="4u 12u(mobile)">
 
 	<section class="highlight">
-	  {% if event.link %}
+	  {% if event.link and event.image %}
 	  <a href="{{event.link}}">
 	    {% endif %}
 	    <img src="{{base}}/images/events/{{event.image}}" alt="" />
