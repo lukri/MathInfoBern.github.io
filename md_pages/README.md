@@ -12,4 +12,7 @@ To create a new **page** with permalink from a markdown file, create here file `
 
 
 Then add a **link** `{{base}}/pagename` to the `/_includes/header.html` file or another page.
-The content could be styled with markdown, i just realised that lists are converted to html lists, but apparently aren't displayed as such by the template..
+
+The content could be styled with markdown, but I just realised that lists are converted to html lists, but apparently aren't displayed as such by the template...
+
+[Here](https://sourceforge.net/p/jekyllc/bugs/markdown_syntax) is a good reference guide for the markdown syntax. 
