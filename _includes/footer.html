@@ -5,8 +5,8 @@
     <header class="style1">
       <h2>Contact</h2>
       <p>
-	Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-	Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat.
+	Questions, wishes, thoughts?<br />
+	Please contact us.
       </p>
     </header>
     <hr />
@@ -15,44 +15,52 @@
 
 	<!-- Contact Form -->
 	<section>
-	  <form method="post" action="#">
+	  <form action="//flipmail.co/api/14InapDMatuSCg1W8SI8"
+		method="post">
 	    <div class="row 50%">
 	      <div class="6u 12u(mobile)">
-		<input type="text" name="name" id="contact-name" placeholder="Name" />
+		<input type="text" name="name" id="contact-name"
+		       placeholder="Name" />
 	      </div>
 	      <div class="6u 12u(mobile)">
-		<input type="text" name="email" id="contact-email" placeholder="Email" />
+		<input type="email" name="email" id="contact-email"
+		       placeholder="Email" />
 	      </div>
 	    </div>
+
 	    <div class="row 50%">
 	      <div class="12u">
-		<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+		<textarea name="message" id="contact-message"
+			  placeholder="Message" rows="4"></textarea>
 	      </div>
 	    </div>
 	    <div class="row">
 	      <div class="12u">
 		<ul class="actions">
-		  <li><input type="submit" class="style1" value="Send" /></li>
-		  <li><input type="reset" class="style2" value="Reset" /></li>
+		  <li><input type="submit" class="style1"
+			     value="Send" /></li>
+		  <li><input type="reset" class="style2"
+			     value="Reset" /></li>
 		</ul>
 	      </div>
 	    </div>
-	  </form>
-	</section>
+
+
 
       </div>
       <div class="6u 12u(mobile)">
 
 	<!-- Contact -->
 	<section class="feature-list small">
+
 	  <div class="row">
 	    <div class="6u 12u(mobile)">
+
+
 	      <section>
 		<h3 class="icon fa-home">Mailing Address</h3>
 		<p>
-		  Untitled Corporation<br />
-		  1234 Somewhere Rd #987<br />
-		  Nashville, TN 00000-0000
+		  {{site.data.contact.address }}
 		</p>
 	      </section>
 	    </div>
@@ -60,22 +68,25 @@
 	      <section>
 		<h3 class="icon fa-comment">Social</h3>
 		<p>
-		  <a href="#">@untitled-corp</a><br />
-		  <a href="#">linkedin.com/untitled</a><br />
-		  <a href="#">facebook.com/untitled</a>
+
+		  <a href="https://github.com/{{site.data.contact.github}}"><i class='fa fa-github'></i>Github</a></br>
+		  <a href="https://facebook.com/{{site.data.contact.facebook}}"><i class='fa fa-facebook-official'></i>Facebook</a>
 		</p>
 	      </section>
 	    </div>
 	  </div>
+
+
 	  <div class="row">
 	    <div class="6u 12u(mobile)">
 	      <section>
 		<h3 class="icon fa-envelope">Email</h3>
 		<p>
-		  <a href="#">info@untitled.tld</a>
+		  {{ site.email }}
 		</p>
 	      </section>
 	    </div>
+	    <!--
 	    <div class="6u 12u(mobile)">
 	      <section>
 		<h3 class="icon fa-phone">Phone</h3>
@@ -84,6 +95,7 @@
 		</p>
 	      </section>
 	    </div>
+	    -->
 	  </div>
 	</section>
 
