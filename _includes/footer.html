@@ -62,31 +62,32 @@
 	<section class="feature-list small">
 
 	  <div class="row">
+
 	    <div class="6u 12u(mobile)">
-
-
 	      <section>
-		<h3 class="icon fa-home">Mailing Address</h3>
+		<h3 class="icon fa-home"></h3>
 		<p>
 		  {{site.data.contact.address }}
 		</p>
 	      </section>
 	    </div>
+
 	    <div class="6u 12u(mobile)">
 	      <section>
-		<h3 class="icon fa-comment">Social</h3>
+		<h3 class="icon fa-comment"></h3>
 		<p>
 
 		  <a href="https://github.com/{{site.data.contact.github}}"><i class='fa fa-github'></i>Github</a></br>
-		  <a href="https://facebook.com/{{site.data.contact.facebook}}"><i class='fa fa-facebook-official'></i>Facebook</a>
+		  <a href="https://facebook.com/{{site.data.contact.facebook}}"><i class='fa fa-facebook-official'></i>Facebook</a></br>
+
 		</p>
 	      </section>
 	    </div>
 	    <div class="6u 12u(mobile)">
 	      <section>
-		<h3 class="icon fa-envelope">Email</h3>
+		<h3 class="icon fa-envelope"></h3>
 		<p>
-		  {{ site.email }}
+		  <a href="mailto:{{site.email}}">{{ site.email}}</a>
 		</p>
 	      </section>
 	    </div>
