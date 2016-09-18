@@ -6,22 +6,27 @@
     {% assign events = site.events | sort: 'date' | reverse %}
     {% for event in events %}
     <li>
-      <article class="box post-excerpt">
-	{% if event.link %}
+      <article class="highlight">
+	{% if event.link and event.image%}
 	<a href="{{event.link}}">
-	  {% endif %}
+
 	  <img class="image left"
 	       src="{{base}}/images/events/{{event.image}}"
 	       alt="{{event.title}}"/>
-	  {% if event.link %}</a>{% endif %}
+	  </a>{% endif %}
 	<h3>{{event.title}}</h3>
+	{% if event.nodate %}
+	{% else %}
 	<p>
-	  {% include functions/german-date.html date=event.date %}</p>
+	  {% include functions/german-date.html date=event.date %}
+	</p>
+	{% endif %}
 	<p>{{event.text}}</p>
+	<p>{{event.ort}}</p>
       </article>
     </li>
     {% endfor %}
 
   </ul>
-  <a href="#" class="button style1">Archives</a>
+  <!-- <a href="#" class="button style1">Archives</a> -->
 </section>
