@@ -11,7 +11,7 @@ And anyway is it quite annoying to manage large file-collections with Google Dri
 Thats why I thought this could be done better, and created a proper collection of the 4 most recent exams of **Mathematical Logic**. And this while still hoping that I dont have to use it, to prepare myself for a second exam attempt.
 
 Here is are the
-[Mathematical Logic Exams of 2010,11,12 & 16](../resources/exams/logic.pdf)
+[Mathematical Logic Exams of 2010,11,12 and 16](../resources/exams/logic.pdf)
 
 My idea would be, to manage them over a private GitHub repo as a TeX project. This way we can produce, only with a few commands, before every exam period, *a nice and clean pdf file for each math lecture, with the most helpfull exams*.
 
