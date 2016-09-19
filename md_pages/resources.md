@@ -4,12 +4,9 @@ title: Resources
 subtitle: About what might be here
 permalink: /resources/
 ---
-<hr>
 As most of you may know, there is a big collection of math exams in our [Google Drive Folder](https://drive.google.com/folderview?id=0B7WeH9ZCm3RbRjhISDE3NkdBUWc). But the biggest part of them is rather old and it's a messy folder.
 
 And anyway is it quite annoying to manage large file-collections with Google Drive.
-
-<hr>
 
 Thats why I thought this could be done better, and created a proper collection of the 4 most recent exams of **Mathematical Logic**. And this while still hoping that I dont have to use it, to prepare myself for a second exam attempt.
 
@@ -22,10 +19,6 @@ On the downside, this means work.
 
 The project is ready and it would be nice to have some help. So if you have some spare time and know how to type math, then please contact us.
 
-<hr>
-
 Another thing is, that there appreas to be a **lack of exams from 2013-15**. If you have some of of those that are missing, then it would be great if you could add them, or contact us if you don't have the necessary permissions.
-
-<hr>
 
 Cheers, *Bruno*
