@@ -19,6 +19,6 @@ On the downside, this means work.
 
 The project is ready and it would be nice to have some help. So if you have some spare time and know how to type math, then please contact us.
 
-Another thing is, that there appreas to be a **lack of exams from 2013-15**. If you have some of of those that are missing, then it would be great if you could add them, or contact us if you don't have the necessary permissions.
+Another thing is, that there appreas to be a **lack of exams from 2013-15**. If you have some of those that are missing, then it would be great if you could add them, or contact us if you don't have the necessary permissions.
 
 Cheers, *Bruno*
