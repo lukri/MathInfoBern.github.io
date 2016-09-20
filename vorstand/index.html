@@ -1,0 +1,44 @@
+---
+layout: startpage
+title: MIB
+base: ..
+---
+
+<div id="page-wrapper">
+
+  <!-- Intro
+       <div id="intro-wrapper" class="wrapper style1">
+	 <div class="title">The Introduction</div>
+	 <section id="intro" class="container">
+	   <p class="style1">{{site.data.introduction.pre }}</p>
+	   <p class="style2">{{site.data.introduction.heading }}</p>
+	   <p class="style3">{{site.data.introduction.main}}</p>
+	 </section>
+       </div>
+       -->
+  <div id="vorstand-wrapper" class="wrapper style3">
+
+    <div class="title">Vorstand</div>
+    <div id="highlights" class="container">
+      <div class="row 150%">
+	{% for member in site.vorstand %}
+	<div class="4u 12u(mobile)">
+	  <article class="highlights"
+		   style="text-align:center">
+	    <hr>
+	    <h3>{{member.name }}</h3>
+	    {% if member.posts %}
+	    {% for post in member.posts %}
+	    {{post.name}}</br>
+	    {% endfor %}
+	    {% endif %}
+	    {{ member.content }}
+	    <hr>
+	  </article>
+	</div>
+
+	{% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

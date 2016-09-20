@@ -24,7 +24,7 @@ github_username:  MathInfoBern
 collections:
 - events
 - guides
-
+- vorstand
 
 # Build settings
 markdown: kramdown
