@@ -1,0 +1,19 @@
+{% assign post = include.event %}
+<article class="highlight">
+  {% if event.link and event.image%}
+  <a href="{{event.link}}">
+
+    <img class="image left"
+	 src="{{base}}/images/events/{{event.image}}"
+	 alt="{{event.title}}"/>
+  </a>{% endif %}
+  <h3>{{event.title}}</h3>
+  {% if event.nodate %}
+  {% else %}
+  <p>
+    {% include functions/german-date.html date=event.date %}
+  </p>
+  {% endif %}
+  <p>{{event.text}}</p>
+  <p>{{event.ort}}</p>
+</article>

@@ -1,10 +1,15 @@
 <!-- _includes/base.html -->
+{% if page.base %}
+
+{% assign base = page.base %}
+
+{% else %}
+
 {% assign base = '' %}
 {% assign depth = page.url | split: '/' | size | minus: 1 %}
-{% if page.permalink %}
-{% assign depth = page.permalinkDepht %}
-{% endif %}
 {% if    depth <= 1 %}{% assign base = '.' %}
 {% elsif depth == 2 %}{% assign base = '..' %}
 {% elsif depth == 3 %}{% assign base = '../..' %}
 {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+
+{% endif %}

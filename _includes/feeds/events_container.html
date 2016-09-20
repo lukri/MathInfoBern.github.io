@@ -8,29 +8,10 @@
       {% for event in events %}
 
       <div class="4u 12u(mobile)">
-
-	<section class="highlight">
-	  {% if event.link and event.image %}
-	  <a href="{{event.link}}">
-	    <img src="{{base}}/images/events/{{event.image}}" alt="" />
-	  </a>{% endif %}
-	  <h3>{{event.title}}</h3>
-	  <p>
-	    {% include functions/german-date.html date=event.date %}</p>
-	  <p>{{event.text}}</p>
-	  <p>{{event.ort}}</p>
-	  <ul class="actions">
-	    {% if event.link %}
-	    <li><a href="{{event.link}}" class="button style1">Learn More</a></li>
-
-	    {% endif %}
-
-	  </ul>
-	</section>
+	{% include events_article.html event=event %}
       </div>
 
       {% endfor %}
-
 
     </div>
   </div>

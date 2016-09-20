@@ -3,6 +3,7 @@ layout: simple_article
 title: About
 subtitle: Who we are
 permalink: /about/
+base: ..
 ---
 
 Vorstand

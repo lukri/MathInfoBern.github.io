@@ -1,0 +1,61 @@
+---
+layout: startpage
+title: MIB
+base: ..
+---
+
+<div id="page-wrapper">
+
+  <!-- Intro
+  <div id="intro-wrapper" class="wrapper style1">
+    <div class="title">The Introduction</div>
+    <section id="intro" class="container">
+      <p class="style1">{{site.data.introduction.pre }}</p>
+      <p class="style2">{{site.data.introduction.heading }}</p>
+      <p class="style3">{{site.data.introduction.main}}</p>
+    </section>
+  </div>
+-->
+
+  <div class="wrapper style3">
+    <!-- Books -->
+    <div class="title">Books</div>
+
+    <div id="main" class="container">
+      {% for bookguide in site.guides  %}
+
+      {{ bookguide }}
+
+      {% include booksection.html
+      title="Analysis"
+      books=bookguide.analysis %}
+
+      <hr>
+
+      {% include booksection.html
+      title="Lineare Algebra"
+      books=bookguide.linalg %}
+
+      <hr>
+
+      {% include booksection.html
+      title="Mathematik Kompendien & Sonstiges"
+      books=bookguide.other-math %}
+
+      <hr>
+
+      {% include booksection.html
+      title="Logik, Diskrete Mathematik & Theoretische Informatik"
+      books=bookguide.logic %}
+
+      <hr>
+
+      {% include booksection.html
+      title="Physik"
+      books=bookguide.physics %}
+
+      <hr>
+
+      {% endfor %}
+    </div>
+  </div>

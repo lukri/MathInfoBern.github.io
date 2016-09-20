@@ -1,32 +1,11 @@
 <section id ="events" class="box">
-  <header>
-    <h2>Events</h2>
-  </header>
+  <header><h2>Events</h2></header>
   <ul class="style2">
     {% assign events = site.events | sort: 'date' | reverse %}
     {% for event in events %}
     <li>
-      <article class="highlight">
-	{% if event.link and event.image%}
-	<a href="{{event.link}}">
-
-	  <img class="image left"
-	       src="{{base}}/images/events/{{event.image}}"
-	       alt="{{event.title}}"/>
-	  </a>{% endif %}
-	<h3>{{event.title}}</h3>
-	{% if event.nodate %}
-	{% else %}
-	<p>
-	  {% include functions/german-date.html date=event.date %}
-	</p>
-	{% endif %}
-	<p>{{event.text}}</p>
-	<p>{{event.ort}}</p>
-      </article>
+      {% include events_article.html event=event %}
     </li>
     {% endfor %}
-
   </ul>
-  <!-- <a href="#" class="button style1">Archives</a> -->
 </section>

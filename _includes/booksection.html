@@ -1,0 +1,15 @@
+<h3>{{ include.title }}</h3>
+
+{% for book in include.books %}
+<h5>{{ book.title }} </h5>
+
+<p >
+  Authors:  <i>{{ book.authors }}</i> </br>
+  ISBN: <i>{{ book.isbn}}</i>
+</p>
+{% if book.description %}
+<p>
+  {{ book.description }}
+</p>
+{% endif %}
+{% endfor %}
