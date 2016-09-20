@@ -1,0 +1,41 @@
+{% assign bookguide=include.bookguide %}
+<div id="bookguide" class="wrapper style3">
+    <!-- Books -->
+    <div class="title">Books</div>
+
+    <div id="main" class="container">
+
+      {{ bookguide }}
+
+      {% include guide/sections/booksection.html
+      title="Analysis"
+      books=bookguide.analysis %}
+
+      <hr>
+
+      {% include guide/sections/booksection.html
+      title="Lineare Algebra"
+      books=bookguide.linalg %}
+
+      <hr>
+
+      {% include guide/sections/booksection.html
+      title="Mathematik Kompendien & Sonstiges"
+      books=bookguide.other-math %}
+
+      <hr>
+
+      {% include guide/sections/booksection.html
+      title="Logik, Diskrete Mathematik & Theoretische Informatik"
+      books=bookguide.logic %}
+
+      <hr>
+
+      {% include guide/sections/booksection.html
+      title="Physik"
+      books=bookguide.physics %}
+
+      <hr>
+
+    </div>
+  </div>

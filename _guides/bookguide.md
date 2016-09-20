@@ -138,16 +138,16 @@ physics:
 
 
 ---
-
-Bücher
+Springer Buch Paket
 =========
 In den Vorlesungen wird zwar meisten genügend Material zur Verfügung gestellt, doch manchmal ist zusätzliche Literatur dennoch hilfreich um verpasstes nachzulesen oder für zusätzliche Beispiele. Falls man kurzfristig oder für vereinzelte Themen etwas braucht, erscheint es einem oft nicht lohnend den Bibliotheks-Katalog zu durchstöbern, und man begnügt sich mit den Quellen die man online findet.
 
-Desshalb möchten Wir euch an dieser Stelle auf das Springer Paket, aufmerksam machen. Dieses wird von der Bibliothek abboniert und gibt uns Zugriff auf die Volltexte einiger Springer Bücher. Wir geben euch hier eine Auswahl von denen, welche den Stoff der ersten Jahre behandeln.
+Desshalb möchten Wir euch an dieser Stelle auf das **Springer Paket**, aufmerksam machen. Dieses wird von der Bibliothek abboniert und gibt uns kostenlosen Zugriff auf die *Volltexte einiger Springer Bücher*. Wir geben euch hier eine Auswahl von denen, welche den Stoff der ersten Jahre behandeln.
 
-Alle diese Bücher können, über Springer Link heruntergeladen werden, wenn man, direkt oder über VPN von Zuhause aus, im Uni-Netz eingeloggt ist.
+Alle diese Bücher können, über [Springer Link][springer_link] gefunden und heruntergeladen werden, wenn man direkt, oder über VPN von Zuhause aus, *im Uni-Netz eingeloggt* ist.
 
-Springer Link: http://link.springer.com/
+Springer Link: [http://link.springer.com/](http://link.springer.com/)
+
 
 <hr>
 
@@ -156,9 +156,12 @@ Hierzu lassen sich aber i.d.R. mehr als genug Online-Resourcen finden, und die B
 
 Als kostenloses Nachschlagewerk für die Java Programmiersprache können wir folgendes empfehlen:
 
-* **Java ist auch eine Insel**
+* Java ist auch eine Insel
+------------------------
   * Christian Ullenboom
   * ISBN: 978-3-8362-1802-3
-  * Link zum Volltext im Netz: http://openbook.rheinwerk-verlag.de/javainsel/
+  * [Volltext im Netz]( http://openbook.rheinwerk-verlag.de/javainsel/)
 
 <hr>
+
+[springer_link]: http://link.springer.com/

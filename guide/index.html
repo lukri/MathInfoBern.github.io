@@ -17,45 +17,9 @@ base: ..
   </div>
 -->
 
-  <div class="wrapper style3">
-    <!-- Books -->
-    <div class="title">Books</div>
+  {% for guide in site.guides  %}
+  {% if guide.title=="Books" %}
+  {% include guide/bookguide.html bookguide=guide %}
 
-    <div id="main" class="container">
-      {% for bookguide in site.guides  %}
-
-      {{ bookguide }}
-
-      {% include booksection.html
-      title="Analysis"
-      books=bookguide.analysis %}
-
-      <hr>
-
-      {% include booksection.html
-      title="Lineare Algebra"
-      books=bookguide.linalg %}
-
-      <hr>
-
-      {% include booksection.html
-      title="Mathematik Kompendien & Sonstiges"
-      books=bookguide.other-math %}
-
-      <hr>
-
-      {% include booksection.html
-      title="Logik, Diskrete Mathematik & Theoretische Informatik"
-      books=bookguide.logic %}
-
-      <hr>
-
-      {% include booksection.html
-      title="Physik"
-      books=bookguide.physics %}
-
-      <hr>
-
-      {% endfor %}
-    </div>
-  </div>
+  {% endif %}
+  {% endfor %}
