@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 
 email: math.info.bern@gmail.com
-description: > #Mathematik Informatik Fachschaft Bern
+description: "" # Mathematik Informatik Fachschaft Bern
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://mathinfobern.github.io
 twitter_username: undefined
