@@ -18,8 +18,17 @@ base: ..
 -->
 
   {% for guide in site.guides  %}
+
+
   {% if guide.title=="Books" %}
-  {% include guide/bookguide.html bookguide=guide %}
+  {% include guide/bookguide.html
+  bookguide=guide %}
+  {% endif %}
+
+
+  {% if guide.title=="Links" %}
+  {% include guide/commonguide.html guide=guide %}
 
   {% endif %}
   {% endfor %}
+</div>

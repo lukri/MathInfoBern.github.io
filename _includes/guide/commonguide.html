@@ -1,0 +1,21 @@
+{% assign guide=include.guide %}
+<div id="bookguide" class="wrapper style2">
+    <!-- Books -->
+    <div class="title">Links</div>
+
+    <div id="main" class="container" style="text-align:center">
+
+      {{ guide }}
+
+
+      {% for link in guide.links %}
+      <p>
+      <a href={{ link.url }}>{{ link.name }}</a>
+      </p>
+      {% endfor %}
+
+
+      <hr>
+
+    </div>
+  </div>
